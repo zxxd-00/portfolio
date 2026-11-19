@@ -69,7 +69,7 @@ export function Hero() {
       </Parallax>
 
       <div className="mx-auto flex min-h-[min(88vh,820px)] max-w-6xl flex-col px-4 pt-12 pb-[38vh] sm:px-8 sm:pt-20 md:pb-[30vh]">
-        <p className="meta halo text-ink-soft">Berkeley, California · Engineering series · {new Date().getFullYear()}</p>
+        <p className="meta halo text-ink-soft">Portfolio · {new Date().getFullYear()}</p>
         <h1
           id="map-title"
           className="font-display halo mt-4 text-[clamp(3.6rem,13vw,10.5rem)] leading-[0.86] tracking-[0.08em] text-forest uppercase"
