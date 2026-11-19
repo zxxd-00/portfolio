@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = { title: "Contact" };
 
 const CHANNELS = [
-  { name: "Email", value: "zaid_adassi@berkeley.edu", href: "mailto:zaid_adassi@berkeley.edu" },
+  { name: "Email", value: "adassizaid@gmail.com", href: "mailto:adassizaid@gmail.com" },
   { name: "LinkedIn", value: "linkedin.com/in/zaid-adassi", href: "https://linkedin.com/in/zaid-adassi" },
 ];
 

@@ -12,7 +12,7 @@ export function MapCollar() {
         <p className="mt-1 text-ink-soft">Mechanical engineering, University of California, Berkeley</p>
         <ul className="mt-5 flex flex-col items-center gap-x-8 gap-y-1 sm:flex-row">
           <li>
-            <a className="link" href="mailto:zaid_adassi@berkeley.edu">zaid_adassi@berkeley.edu</a>
+            <a className="link" href="mailto:adassizaid@gmail.com">adassizaid@gmail.com</a>
           </li>
           <li>
             <a className="link" href="https://linkedin.com/in/zaid-adassi" target="_blank" rel="noreferrer">linkedin.com/in/zaid-adassi</a>
