@@ -13,12 +13,13 @@ export default function Home() {
     <>
       <Hero />
 
-      <section aria-labelledby="about" className="mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:px-8 md:grid-cols-[1fr_2fr]">
-        <div>
-          <h2 id="about" className="font-display text-4xl text-forest sm:text-5xl">
-            About the Surveyor
-          </h2>
-          <figure className="mt-8 max-w-[18rem]">
+      <section aria-labelledby="about" className="mx-auto max-w-6xl px-4 py-20 sm:px-8">
+        <h2 id="about" className="font-display text-4xl text-forest sm:text-5xl">
+          About the Surveyor
+        </h2>
+        {/* Photo on the left, blurb vertically centered on it. */}
+        <div className="mt-8 grid items-center gap-10 md:grid-cols-[18rem_1fr] md:gap-14">
+          <figure className="max-w-[18rem]">
             {headshot ? (
               <img
                 src={headshot}
@@ -37,8 +38,7 @@ export default function Home() {
             )}
             <figcaption className="meta mt-2 text-ink-soft">Z. Adassi</figcaption>
           </figure>
-        </div>
-        <div className="max-w-[62ch] space-y-5 text-lg md:pt-[4.6rem]">
+          <div className="max-w-[46ch] space-y-6 text-xl leading-relaxed sm:text-[1.4rem]">
           <p>
             Hi, I&rsquo;m Zaid, a mechanical engineering student at UC Berkeley. I love building physical things and
             seeing a project through from first idea to finished product: design, analysis, testing, and manufacturing.
@@ -50,6 +50,7 @@ export default function Home() {
             <span className="text-ink-soft"> or </span>
             <Link href="/resume" className="link font-medium text-forest">download my resume</Link>.
           </p>
+          </div>
         </div>
       </section>
 
