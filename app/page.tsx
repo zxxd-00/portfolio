@@ -35,7 +35,7 @@ export default function Home() {
                 </p>
               </div>
             )}
-            <figcaption className="meta mt-2 text-ink-soft">Z. Adassi · Berkeley, CA</figcaption>
+            <figcaption className="meta mt-2 text-ink-soft">Z. Adassi</figcaption>
           </figure>
         </div>
         <div className="max-w-[62ch] space-y-5 text-lg md:pt-[4.6rem]">

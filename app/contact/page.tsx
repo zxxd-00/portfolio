@@ -13,7 +13,7 @@ export default function ContactPage() {
       <header className="pt-16 sm:pt-24">
         <h1 className="font-display text-[clamp(3rem,9vw,6.5rem)] text-forest">Contact</h1>
         <p className="mt-4 max-w-[52ch] text-lg">
-          Questions about a project, or work in product design, hardware and robotics: email is the fastest way to reach me.
+          Thank you for stopping by. The best way to reach me is by email, and I&rsquo;m always happy to talk about a project or an opportunity.
         </p>
       </header>
       <ul className="mt-14 border-t-2 border-ink/80">

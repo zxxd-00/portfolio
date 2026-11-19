@@ -78,8 +78,8 @@ export function Hero() {
           <br />
           Adassi
         </h1>
-        <p className="halo mt-6 max-w-[34ch] text-lg text-ink sm:text-xl">
-          Mechanical engineering at UC Berkeley
+        <p className="font-display mt-6 w-fit border-l-4 border-blaze bg-paper/90 py-1.5 pr-3 pl-3 text-[clamp(1.35rem,2.8vw,2.1rem)] tracking-[0.06em] text-forest uppercase">
+          Mechanical Engineering at UC Berkeley
         </p>
       </div>
     </section>
