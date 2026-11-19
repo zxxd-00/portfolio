@@ -1,0 +1,39 @@
+# Case-study notes. See materials/README.md for the full format.
+# "image: filename | caption" places a photo or video in a camp.
+# Write "skip" in a section to leave that camp off the page.
+
+title: Suspension Upright
+org: Berkeley Formula Racing
+role: Dynamics engineer
+year: 2026
+dates: Aug 2026 – present
+location: Berkeley, CA
+coords: 37.8719° N, 122.2585° W
+tools: SolidWorks, Ansys
+cover: upright isometric view.png | The upright
+remove-background: upright isometric view.png | upright front view.png | upright assembled with wheel.png
+summary: The upright carries the hub bearings, brake caliper and suspension pickups, and reacts every braking, cornering and bump load from the tire. I compared aluminum, steel and titanium on strength-to-weight and stiffness, validated the design with FEA, and planned its manufacture by CNC machining. Less upright mass means less unsprung mass, so the tire stays in better contact with the road.
+
+[problem]
+Every load from the tire passes through the upright: braking, cornering and bumps. It has to stay stiff enough to hold wheel alignment under those loads, and every gram it carries is unsprung mass the suspension has to control.
+
+[requirements]
+- Carry braking, cornering and bump loads
+- Hold wheel alignment under load
+- Package inside the wheel with brake clearance
+- Manufacturable by CNC machining
+
+[hand-calcs]
+skip
+
+[fea]
+skip
+
+[iterations]
+skip
+
+[results]
+label: Final design
+I chose the material by comparing aluminum, steel and titanium on strength-to-weight and stiffness, validated the design with FEA, and wrote the manufacturing plan, including the BOM and design tolerances.
+image: upright front view.png | Front view
+image: upright assembled with wheel.png | Assembled inside the wheel

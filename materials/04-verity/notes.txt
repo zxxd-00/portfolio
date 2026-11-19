@@ -1,0 +1,40 @@
+# Case-study notes. See materials/README.md for the full format.
+# "image: filename | caption" places a photo or video in a camp.
+# Write "skip" in a section to leave that camp off the page.
+
+title: Verity
+org: Y Combinator AI wearables hackathon
+role: Hardware + product
+year: 2026
+dates: Nov 2026
+location: San Francisco, CA
+coords: 37.7585° N, 122.3890° W
+tools: Vexo band, Camera, Computer vision, Audio detection, 3D printing
+cover: video of it working.MOV | The prototype on the wrist, logging a live session
+summary: A wearable built at a Y Combinator AI hackathon that pairs a camera with a Vexo band to turn hands-on engineering work into a verified digital record. It identifies which fastener is being torqued and uses the torque wrench's beep to confirm each one reached spec, replacing manual sign-off checklists that are slow, error-prone and impossible to audit.
+
+[problem]
+On an engineering floor, critical steps like torquing bolts are tracked with manual checklists. They're filled in after the fact, depend on memory, and are easy to get wrong, so there's no reliable proof the work was done to spec.
+
+[requirements]
+- Hands-free, with nothing to press or fill in
+- Know which fastener is being worked on
+- Confirm each one actually reached spec
+- Produce a time-stamped record automatically
+
+[hand-calcs]
+label: How it works
+A camera and a Vexo band capture the work from the technician's point of view. The system identifies which bolt is being torqued, listens for the torque wrench's beep to confirm it reached spec, and logs each bolt to a live session with an evidence timeline.
+image: enclosure with hardware inside.heic | Wearable housing with the camera and electronics
+
+[fea]
+label: Demo
+The demo task was tightening the bolts on a wheel. As each bolt was torqued, the dashboard marked it on a wheel diagram and logged the confirmation, building a complete record of the job without a checklist.
+
+[iterations]
+skip
+
+[results]
+label: Outcome
+A working end-to-end demo built within the hackathon: from the technician's hands, to a confirmed torque event, to a logged record.
+image: me standing outside yc.JPG | At Y Combinator for the hackathon

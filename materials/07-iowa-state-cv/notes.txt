@@ -1,0 +1,36 @@
+# Case-study notes. See materials/README.md for the full format.
+# "image: filename | caption" places a photo or video in a camp.
+# Write "skip" in a section to leave that camp off the page.
+
+title: Traffic Incident Detection
+org: REACTOR Lab, Iowa State University
+role: Computer vision engineering intern
+year: 2025
+dates: Summer 2025
+location: Ames, IA
+coords: 42.0267° N, 93.6465° W
+tools: NVIDIA DeepStream, ResNet, KLT tracking, React.js, AWS S3
+cover: stalled vehicle detection.png | Vehicles detected and tracked on an Iowa DOT camera feed
+summary: NSF-funded research automating traffic incident detection across 110 Iowa DOT highway cameras. A real-time computer vision pipeline flags stalled and wrong-way vehicles and clips the footage, and a dashboard lets engineers review incidents by date, type and location, replacing slow, error-prone manual review of CCTV feeds.
+
+[problem]
+Traffic incidents are usually caught by people watching CCTV feeds, which is slow and easy to miss. The detection side existed, but there was no unified way to log, sort and review what it found.
+
+[requirements]
+skip
+
+[hand-calcs]
+label: Detection Pipeline
+Live camera streams run through NVIDIA DeepStream: a ResNet model detects vehicles and a KLT tracker follows each one's speed and direction. Vehicles that stay stopped far longer than a normal traffic stop, or travel against the lane's direction, are flagged, and a clip of the event is saved automatically.
+
+[fea]
+label: Dashboard
+I built a React.js dashboard that pulls incident clips from AWS S3, with filters for date, incident type and camera location, a map of camera pins, and a table of incidents for review.
+
+[iterations]
+skip
+
+[results]
+label: Outcome
+A working end-to-end system, from live camera feed to a reviewable incident record. Presented as a research poster through the TrACE REU program at the Iowa State Institute for Transportation.
+image: research poster.png | Research poster (click to open full size)

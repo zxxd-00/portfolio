@@ -1,0 +1,42 @@
+# Case-study notes. See materials/README.md for the full format.
+# "image: filename | caption" places a photo or video in a camp.
+# Write "skip" in a section to leave that camp off the page.
+
+title: Mycelium Biomaterials Research
+org: Barzee Bioprocessing Laboratory, University of Kentucky
+role: Biofabrication engineering intern
+year: 2026
+dates: May – Aug 2026
+location: Lexington, KY
+coords: 38.0307° N, 84.5040° W
+tools: Allevi 3 bioprinter, 3D printing, Fiji image analysis
+cover: picture of me in lab.JPG | Printing on the Allevi 3 bioprinter
+summary: NSF-funded 4D bioprinting research: depositing living R. oligosporus mycelium in controlled line patterns on an Allevi 3 bioprinter and measuring hyphal orientation with a custom Fiji image-analysis workflow. The results show printed geometry can steer growth direction, a step toward engineering the structure of mycelium materials that could replace foam packaging.
+
+[problem]
+Mycelium, the root network of fungi, can be grown into renewable alternatives to packaging foam, leather and textiles. How strong those materials end up depends on which way the fungal fibers (hyphae) grow, and that is hard to control. 4D bioprinting offers a way in: print living material in a pattern, and let growth carry the structure forward over time.
+
+[requirements]
+label: Research question
+How does the spacing between printed lines steer the growth direction of R. oligosporus mycelium?
+
+[hand-calcs]
+label: Methods
+I printed parallel lines of mycelium bioink on an Allevi 3 bioprinter at several line spacings, incubated them, and measured which way the hyphae grew between the lines.
+image: picture of printer in motion.JPG | The Allevi 3 depositing printed lines
+
+[fea]
+label: Experimental development
+Reliable prints took tuning: a bioink preparation method, printing parameters for consistent extrusion, and incubation conditions for consistent growth. I also built a Fiji image-processing workflow so hyphal orientation could be measured the same way every time.
+image: picture of printed lines before growth.JPG | Printed lines before growth
+image: picture of printed lines after growth.JPG | Hyphae growing out from the printed lines
+
+[iterations]
+skip
+
+[results]
+label: Findings
+Wider line spacing pushed hyphal growth closer to the expected perpendicular direction, while spacing had little effect on how dispersed the growth was. Printed geometry can steer how mycelium grows, a step toward engineering its structure on purpose.
+
+Presented as a research poster through the NSF REU program, mentored by Dr. Tyler Barzee, Suvro Talukdar and Keya Roy.
+image: adassi_zaid_poster.png | Research poster (click to open full size)

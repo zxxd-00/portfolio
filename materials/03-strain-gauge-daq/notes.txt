@@ -1,0 +1,47 @@
+# Case-study notes. See materials/README.md for the full format.
+# "image: filename | caption" places a photo in a camp. Unplaced photos go to Field photos.
+# One photo in a camp sits beside the text; two sit side by side below it.
+
+title: Strain Gauge Data Acquisition
+org: Berkeley Formula Racing
+role: Dynamics engineer
+year: 2026
+dates: Aug 2026 – present
+location: Berkeley, CA
+coords: 37.8719° N, 122.2585° W
+tools: ESP32-S3, Strain gauges, microSD logging, 3D printing, Instron
+cover: assembled_enclosure.JPG
+summary: An ESP32-based strain gauge data acquisition system that measures axial force in the suspension rods during track testing. Calibrated on an Instron and synced with the car's own sensor data, it gives the team measured load cases to validate suspension parts that were previously designed to estimated loads.
+
+[problem]
+Suspension parts are designed to calculated loads, with no measured data to check them against. This system records the actual force in the suspension rods while the car is driven hard.
+
+[requirements]
+- Measure rod force in tension and compression
+- Log with no input from the driver
+- Run from its own 5 V battery
+- Clamp to the chassis without drilling
+- Quick-disconnect sealed connectors
+- Survive vibration and heat
+
+[hand-calcs]
+label: Electronics & enclosure
+An ESP32-S3 with a strain gauge amplifier and microSD logging, on one protoboard, inside a 3D-printed enclosure with clamp blocks for a chassis tube.
+image: assembled_enclosure_top_view.JPG | ESP32-S3, SD logging and amplifier on one board
+
+[fea]
+label: Calibration
+An instrumented rod was loaded on an Instron while the logger read the gauges, turning raw readings into force.
+image: instron_testing.JPG | Calibrating an instrumented rod on the Instron
+
+[iterations]
+label: Installation
+Clamped to a chassis tube, with gauge leads in heat-reflective sleeving and a separate 5 V battery.
+image: IMG_3457.JPG | Clamped to the chassis
+image: assembled_in_car.png | Logger and battery in the car
+
+[results]
+label: Track data
+Rod forces logged through autocross runs and played back alongside engine speed, speed, gear, throttle, braking, lateral g and shock travel, so each load spike lines up with what the car was doing.
+image: data_dashboard_screenshot.png | Measured rod forces synced with car data
+image: picture of car.JPG | Autocross test day

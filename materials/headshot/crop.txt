@@ -1,0 +1,4 @@
+# Portrait crop for the home page (always 4:5).
+# x y width, as fractions of the photo: x/y = top-left corner, width = crop width.
+# Smaller width = zoom in. Delete this file to use the whole photo.
+0.16 0.34 0.64

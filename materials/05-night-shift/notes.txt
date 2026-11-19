@@ -1,0 +1,23 @@
+# Case-study notes. See materials/README.md for the full format.
+# Remove the "#" from a line to use it. Empty sections keep placeholder text.
+#
+# title:
+# org:
+# role:
+# year:
+# location:
+# coords:
+# tools:
+# summary:
+
+[problem]
+
+[requirements]
+
+[hand-calcs]
+
+[fea]
+
+[iterations]
+
+[results]

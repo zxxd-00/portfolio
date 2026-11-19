@@ -1,0 +1,46 @@
+# Case-study notes. See materials/README.md for the full format.
+# "image: filename | caption" places a photo or video in a camp.
+# Write "skip" in a section to leave that camp off the page.
+# "video-crop: file | w:h:x:y" trims a video (source pixels) when it is converted.
+
+title: Bell Crank
+org: Berkeley Formula Racing
+role: Dynamics engineer
+year: 2026
+dates: Aug 2026 – present
+location: Berkeley, CA
+coords: 37.8719° N, 122.2585° W
+tools: SolidWorks, SolidWorks Simulation, Z88Arion
+cover: final_upright_image.png | The bell crank assembly
+summary: The bell crank transfers pushrod load into the damper and sets the suspension's motion ratio. I designed it in SolidWorks, used topology optimization to remove material that wasn't carrying load, and validated the final geometry with FEA, producing a lighter part without giving up the stiffness that keeps the motion ratio consistent.
+
+video-crop: topology optimization.mp4 | 1884:700:0:218
+
+[problem]
+The bell crank links the pushrod to the damper. Its geometry sets the suspension's motion ratio, and it has to carry the pushrod load without flexing while staying as light as possible.
+
+[requirements]
+- Set the motion ratio between pushrod and damper
+- Fit between the chassis tubes
+- Carry the pushrod load with margin
+- Keep mass to a minimum
+
+[hand-calcs]
+label: Topology optimization
+A topology optimization in Z88Arion showed where material was doing work and where it could come out. That result shaped the cutouts in the final bell crank.
+image: topology optimization.mp4 | Topology optimization in Z88Arion
+
+[fea]
+label: FEA
+A static study in SolidWorks Simulation checked the final design under load, looking at stress through the part and the factor of safety.
+image: stress fea.png | Von Mises stress
+image: factor of safety fea.png | Factor of safety
+
+[iterations]
+skip
+
+[results]
+label: Final design
+The finished bell crank, assembled with its fasteners and mounted on the chassis between the pushrod and the damper.
+image: rocker_on_chassis2.png | The bell crank between the pushrod and the damper
+image: rocker_on_chassis1.png | Bell crank, pushrod and damper on the chassis
