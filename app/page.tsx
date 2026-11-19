@@ -40,10 +40,9 @@ export default function Home() {
           </figure>
           <div className="max-w-[46ch] space-y-6 text-xl leading-relaxed sm:text-[1.4rem]">
           <p>
-            Hi, I&rsquo;m Zaid, a mechanical engineering student at UC Berkeley. I love building physical things and
-            seeing a project through from first idea to finished product: design, analysis, testing, and manufacturing.
-            Here are some of my favorite projects, each one a real problem I got to design, build, and test a solution
-            for.
+            Hi, I&rsquo;m Zaid, a mechanical engineering student at UC Berkeley. I&rsquo;m passionate about taking ideas
+            all the way from concept to finished product: design, analysis, testing, and manufacturing. This portfolio
+            features some of my favourite projects.
           </p>
           {/* Actions, set apart from the blurb: smaller, outlined, on their own rule. */}
           <div className="flex flex-wrap gap-3 border-t border-ink/15 pt-6 text-base">
