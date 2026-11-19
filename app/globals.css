@@ -16,6 +16,11 @@
   --ink: #2a2419;
   --ink-soft: #5b5242;
   --blaze: #f05a0a;
+  /* USGS base colors: woodland tint, hydrography, UTM grid */
+  --woodland: #d3dfbb;
+  --woodland-deep: #8fa86a;
+  --water: #3a6d96;
+  --water-tint: #cddde4;
   --frame: clamp(6px, 1.2vw, 14px);
 }
 
@@ -28,6 +33,10 @@
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --color-blaze: var(--blaze);
+  --color-woodland: var(--woodland);
+  --color-woodland-deep: var(--woodland-deep);
+  --color-water: var(--water);
+  --color-water-tint: var(--water-tint);
   --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, monospace;
 }
@@ -46,7 +55,12 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   /* Faint paper fibre so the sheet doesn't read as flat screen colour. */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .27 0 0 0 0 .17 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--water) 9%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--water) 9%, transparent) 1px, transparent 1px),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .27 0 0 0 0 .17 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  /* 1 km UTM grid at 1:24,000 is ~4.2cm; 160px reads the same on screen. */
+  background-size: 160px 160px, 160px 160px, 180px 180px;
 }
 
 ::selection {
@@ -129,4 +143,11 @@ body {
 }
 @keyframes hero-flag {
   to { transform: scaleX(1); }
+}
+
+/* Woodland band: green vegetation tint with a faint stipple, like a quad's woodland fill. */
+.woodland-band {
+  background-color: color-mix(in srgb, var(--woodland) 62%, var(--paper));
+  background-image: radial-gradient(color-mix(in srgb, var(--woodland-deep) 38%, transparent) 0.9px, transparent 1.1px);
+  background-size: 9px 9px;
 }

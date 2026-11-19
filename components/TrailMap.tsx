@@ -156,7 +156,7 @@ export function TrailMap({ waypoints }: { waypoints: Waypoint[] }) {
               )}
               <p className="mt-5 flex flex-wrap items-baseline gap-x-5 gap-y-1">
                 <Link href={`/projects/${w.slug}`} className="link font-medium text-forest">
-                  Read the case study
+                  Learn More
                 </Link>
                 {w.coords !== "—" && <span className="meta text-ink-soft">{w.coords}</span>}
               </p>
