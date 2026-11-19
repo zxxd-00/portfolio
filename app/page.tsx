@@ -40,10 +40,10 @@ export default function Home() {
         </div>
         <div className="max-w-[62ch] space-y-5 text-lg md:pt-[4.6rem]">
           <p>
-            Hi, I&rsquo;m Zaid, a mechanical engineering student at UC Berkeley. I&rsquo;m passionate about hardware,
-            automotive and robotics, and I enjoy seeing a project through from first idea to finished product: design,
-            analysis, testing and manufacturing. I&rsquo;m driven by seeing a design hold up in
-            the real world, whether that&rsquo;s a suspension part on a race car or a prototype on a lab bench.
+            Hi, I&rsquo;m Zaid, a mechanical engineering student at UC Berkeley. I love building physical things and
+            seeing a project through from first idea to finished product: design, analysis, testing, and manufacturing.
+            Below are some of my favorite projects, each one a real problem I got to design, build, and test a solution
+            for.
           </p>
           <p>
             On Berkeley Formula Racing I design suspension components and the system that measures their loads on track.
