@@ -42,13 +42,8 @@ export default function Home() {
           <p>
             Hi, I&rsquo;m Zaid, a mechanical engineering student at UC Berkeley. I love building physical things and
             seeing a project through from first idea to finished product: design, analysis, testing, and manufacturing.
-            Below are some of my favorite projects, each one a real problem I got to design, build, and test a solution
+            Here are some of my favorite projects, each one a real problem I got to design, build, and test a solution
             for.
-          </p>
-          <p>
-            On Berkeley Formula Racing I design suspension components and the system that measures their loads on track.
-            I&rsquo;ve done NSF-funded research on mycelium biomaterials at the University of Kentucky and on computer
-            vision for transportation at Iowa State, and built an AI wearable for technicians at a YC hackathon.
           </p>
           <p>
             <Link href="/projects" className="link font-medium text-forest">Walk the full trail</Link>
