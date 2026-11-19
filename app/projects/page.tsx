@@ -31,7 +31,7 @@ export default function ProjectsPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-8">
       <header className="max-w-3xl pt-16 sm:pt-24">
-        <p className="meta text-ink-soft">Trailhead · {projects.length} waypoints · descending</p>
+        <p className="meta text-ink-soft">Trailhead · {projects.length} waypoints</p>
         <h1 className="font-display mt-4 text-[clamp(3rem,9vw,6.5rem)] text-forest">Projects</h1>
       </header>
       <RouteOverview stops={waypoints.map(({ slug, wpt, title, dates, org }) => ({ slug, wpt, title, dates, org }))} />

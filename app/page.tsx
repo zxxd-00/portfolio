@@ -65,8 +65,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Woodland band: the green tint a quad uses for vegetation, with its own contour texture. */}
-      <div className="woodland-band border-y border-woodland-deep/50 py-14 sm:py-16">
       <section aria-labelledby="featured" className="mx-auto max-w-6xl px-4 sm:px-8">
         <div className="flex flex-wrap items-end justify-between gap-4 border-b-2 border-ink/80 pb-4">
           <h2 id="featured" className="font-display text-4xl text-forest sm:text-5xl">
@@ -85,7 +83,7 @@ export default function Home() {
             <li key={p.slug} className="border-b border-ink/15">
               <Link
                 href={`/projects/${p.slug}`}
-                className="group -mx-3 grid gap-x-8 gap-y-2 px-3 py-7 transition-colors hover:bg-paper/55 md:grid-cols-[7rem_1fr_14rem] md:items-baseline"
+                className="group grid gap-x-8 gap-y-2 py-7 md:grid-cols-[7rem_1fr_14rem] md:items-baseline"
               >
                 <span className="meta flex items-center gap-3 text-ink-soft">
                   <span aria-hidden className="h-4 w-2.5 border-[1.5px] border-blaze bg-paper transition-colors group-hover:border-ink group-hover:bg-blaze" />
@@ -100,14 +98,13 @@ export default function Home() {
                   <br />
                   EL. {formatFt(meta.elevation)} FT
                   <br />
-                  <span className="text-water">{p.coords}</span>
+                  {p.coords}
                 </span>
               </Link>
             </li>
           ))}
         </ol>
       </section>
-      </div>
     </>
   );
 }
