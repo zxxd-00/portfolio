@@ -41,7 +41,7 @@ export default function Home() {
         <div className="max-w-[62ch] space-y-5 text-lg md:pt-[4.6rem]">
           <p>
             Hi, I&rsquo;m Zaid, a mechanical engineering student at UC Berkeley. I&rsquo;m passionate about hardware,
-            automotive and robotics, and I enjoy seeing a project through from first idea to finished hardware: design,
+            automotive and robotics, and I enjoy seeing a project through from first idea to finished product: design,
             analysis, testing and manufacturing. I&rsquo;m driven by seeing a design hold up in
             the real world, whether that&rsquo;s a suspension part on a race car or a prototype on a lab bench.
           </p>
