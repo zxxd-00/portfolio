@@ -45,11 +45,23 @@ export default function Home() {
             Here are some of my favorite projects, each one a real problem I got to design, build, and test a solution
             for.
           </p>
-          <p>
-            <Link href="/projects" className="link font-medium text-forest">Walk the full trail</Link>
-            <span className="text-ink-soft"> or </span>
-            <Link href="/resume" className="link font-medium text-forest">download my resume</Link>.
-          </p>
+          {/* Actions, set apart from the blurb: smaller, outlined, on their own rule. */}
+          <div className="flex flex-wrap gap-3 border-t border-ink/15 pt-6 text-base">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2.5 border-[1.5px] border-forest px-4 py-2 font-medium text-forest transition-colors hover:bg-forest hover:text-paper"
+            >
+              <span aria-hidden className="h-3.5 w-2 border border-ink bg-blaze" />
+              Walk the full trail
+            </Link>
+            <Link
+              href="/resume"
+              className="inline-flex items-center gap-2.5 border-[1.5px] border-forest px-4 py-2 font-medium text-forest transition-colors hover:bg-forest hover:text-paper"
+            >
+              <span aria-hidden className="h-3.5 w-2 border border-ink bg-blaze" />
+              Download my resume
+            </Link>
+          </div>
           </div>
         </div>
       </section>
